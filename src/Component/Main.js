@@ -1,8 +1,14 @@
 import React, {Component} from 'react';
 import logo from '../img/logo.png';
 import '../css/Main.css';
+import "../js/jquery-1.12.3.min";
 
 class Main extends Component{
+    mainStart = () => {
+        $(function () {
+            $("#wrap").animate({"top" : "-80%"}, 100);
+        });
+    };
     render(){
         return(
             <div id="wrap">
@@ -11,14 +17,11 @@ class Main extends Component{
                 </div>
                 <section>
                     <h1>Let's go on a Trip</h1>
-                    <button type="submit" onClick={mainStart}>Let's Go</button>
+                    <button type="button" onClick={this.mainStart}>Let's Go</button>
                 </section>
             </div>
         );
     }
-}
-class mainStart{
-
 }
 
 
