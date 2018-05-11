@@ -1,19 +1,17 @@
 import React, {Component} from 'react';
 import logo from '../img/logo.png';
 import '../css/Main.css';
-import "../js/jquery-1.12.3.min";
+import $ from "jquery";
 
 class Main extends Component{
     mainStart = () => {
-        $(function () {
-            $("#wrap").animate({"top" : "-80%"}, 100);
-        });
+        $("#wrap").animate({"top" : "-80%"}, 200);
     };
     render(){
         return(
             <div id="wrap">
                 <div className="header">
-                    <h1><img src={logo}/><a href="/public/index.html"></a></h1>
+                    <h1><img src={logo}/></h1>
                 </div>
                 <section>
                     <h1>Let's go on a Trip</h1>
