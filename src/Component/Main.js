@@ -12,10 +12,10 @@ class Main extends Component{
         return(
             <div id="wrap">
                 <Navbar/>
-                <section>
+                <div id="intro-ment">
                     <h1>Let's go on a Trip</h1>
                     <button type="button" onClick={this.mainStart}>Let's Go</button>
-                </section>
+                </div>
             </div>
         );
     }
