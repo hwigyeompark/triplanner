@@ -20,10 +20,26 @@ a{
 }
 #nav > h1{
     width: 120%;
-    margin-left: 2%;
+    margin-left: 2.5%;
     margin-top: 1.5%;
 }
 #nav > h1 > img{
-    width: 150px;
+    width: 155px;
     height: auto;
+}
+
+#nav-ul{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#nav-ul > li{
+    float: left;
+    list-style: none;
+    width: 30%;
+}
+
+#nav-ul > li a{
+    font-size: 1.2em;
+    font-family: 'Nanum Gothic', sans-serif;
 }
