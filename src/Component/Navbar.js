@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import logo from '../img/logo.png'
 
 class Navbar extends Component{
     render(){
         return(
           <div>
-              <h1></h1>
+              <h1><image title="go to Main" alt="go to Main">{logo}</image></h1>
               <ul>
                   <li>일정만들기</li>
                   <li>여행기작성</li>
@@ -13,3 +14,4 @@ class Navbar extends Component{
         );
     }
 }
+export default Navbar;
