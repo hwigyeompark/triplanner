@@ -5,7 +5,6 @@ class Content extends Component{
     render(){
         return(
           <section id="content">
-              <Navbar/>
           </section>
         );
     }

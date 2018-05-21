@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from '../img/logo.png';
 import '../css/Main.css';
 import $ from "jquery";
+import Navbar from "./Navbar";
 
 class Main extends Component{
     mainStart = () => {
@@ -10,9 +11,7 @@ class Main extends Component{
     render(){
         return(
             <div id="wrap">
-                <div className="header">
-                    <h1><img src={logo}/></h1>
-                </div>
+                <Navbar/>
                 <section>
                     <h1>Let's go on a Trip</h1>
                     <button type="button" onClick={this.mainStart}>Let's Go</button>
