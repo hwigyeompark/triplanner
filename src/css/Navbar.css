@@ -46,4 +46,6 @@ a{
 #nav-ul > li a{
     font-size: 1.2em;
     font-family: 'Nanum Gothic', sans-serif;
+    color: #777;
+    font-weight: bold;
 }

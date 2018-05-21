@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../img/logo.png';
 import '../css/Main.css';
-import $ from "jquery";
 import Navbar from "./Navbar";
 
 class Main extends Component{
