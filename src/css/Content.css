@@ -11,3 +11,8 @@ ul, li{
 a{
     text-decoration: none;
 }
+
+#content{
+    overflow: hidden;
+    width: 100%;
+}
