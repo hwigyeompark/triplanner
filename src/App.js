@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from './Component/Main';
-import Content from  './Component/Content'
-
+import Content from  './Component/Content';
 import Making from './routes/Making';
 
 class App extends Component {

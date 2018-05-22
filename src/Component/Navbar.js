@@ -9,8 +9,8 @@ class Navbar extends Component{
             <div id="nav">
                 <h1><img src={logo}/></h1>
               <ul id="nav-ul">
-                  <Link to="/making"><li><a href="#make plan">일정만들기</a></li></Link>
-                  <li><a href="#travel writing">여행기작성</a></li>
+                  <li><Link href="#make plan" to="/making">일정만들기</Link></li>
+                  <li><Link href="#travel writing" to="/writing">여행기작성</Link></li>
               </ul>
           </div>
         );
