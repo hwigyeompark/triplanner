@@ -5,7 +5,7 @@ class Making extends Component{
     render(){
         return(
           <div>
-              tqtqtq : <input type="text"/>
+              아ㅏ아아아ㅏㅏㅏㅏㅏㅏㅏㅏ
           </div>
         );
     }

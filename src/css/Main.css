@@ -35,6 +35,23 @@ a{
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 5.5em;
-    margin-top: 15%;
+    margin-top: 16%;
+}
+
+#intro-btn{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#intro-btn button{
+    width: 250px;
+    height: 85px;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background: #cd2717;
+    text-align: center;
+    border: none;
 }
 /*    background: #cd2717;*/

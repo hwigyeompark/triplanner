@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import Main from './Component/Main';
-import Content from  './Component/Content';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import Making from './routes/Making';
 import Writing from './routes/Writing';
+import Main from "./Component/Main";
+import Navbar from "./Component/Navbar";
 
 class App extends Component {
   render(){
       return (
           <div>
-              <Main/>
-              <Content />
+              <Navbar/>
               <BrowserRouter>
                   <div>
+                      <Route exact path='/' component={Main}/>
                       <Route path='/making' component={Making}/>
                       <Route path='/writing' component={Writing}/>
                   </div>
