@@ -9,7 +9,7 @@ class Main extends Component{
                     <h1>Let's go on a Trip</h1>
                 </div>
                 <section id="content">
-                    <div id="sec1">
+                    <div id="">
                     </div>
                 </section>
             </div>
