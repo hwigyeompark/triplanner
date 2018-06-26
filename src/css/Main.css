@@ -22,11 +22,27 @@ a{
 #container{
     width: 100%;
     height: 700px;
-    background: url("../img/back.jpg");
+    background: url("../img/back.png");
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
 }
+
+#container #search{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 45%;
+    height: 85px;
+    margin: 0 auto;
+    border: 12px solid #cd2717;;
+}
+
+#container #search > #searchBtn{
+    float: right;
+    width: 10%;
+    height: 100%;
+}
+
 #intro-ment
 {
     width: 100%;
@@ -38,7 +54,7 @@ a{
     font-family: 'Kalam', cursive;
     text-align: center;
     font-size: 5.5em;
-    padding-top: 15%;
+    padding-top: 13%;
 }
 
 #intro-btn{

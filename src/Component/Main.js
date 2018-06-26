@@ -11,6 +11,11 @@ class Main extends Component{
                     <div id="intro-ment">
                         <h1>Let's go on a Trip</h1>
                     </div>
+                    <br/>
+                    <div id="search">
+                        <input type="text" style={{width:"90%", height:"100%"}}/>
+                        <button id="searchBtn">Search</button>
+                    </div>
                 </div>
                 <Content/>
             </div>

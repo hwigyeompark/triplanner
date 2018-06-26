@@ -16,6 +16,15 @@ class Content extends Component{
             },
             trip3:{
               title: '"친구랑 둘이서 일본 먹방"'
+            },
+            trip4:{
+                title: '"친구랑 둘이서 일본 먹방"'
+            },
+            trip5:{
+                title: '"친구랑 둘이서 일본 먹방"'
+            },
+            trip6:{
+                title: '"친구랑 둘이서 일본 먹방"'
             }
         };
         return (
@@ -40,12 +49,6 @@ class Content extends Component{
                     </Card>
                     </a>
 
-                    <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-                        <CardTitle>Special Title Treatment</CardTitle>
-                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                        <Button>Button</Button>
-                    </Card>
-
                     <a style={{color:"#333"}} href="/detail3">
                     <Card>
                         <CardImg top width="100%" src={card2} />
@@ -55,11 +58,32 @@ class Content extends Component{
                     </Card>
                     </a>
 
-                    <Card body inverse color="primary">
-                        <CardTitle>Special Title Treatment</CardTitle>
-                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                        <Button color="secondary">Button</Button>
-                    </Card>
+                    <a style={{color:"#333"}} href="/detail4">
+                        <Card>
+                            <CardImg top width="100%" src={card2} />
+                            <CardBody>
+                                <CardTitle>{tlist.trip4.title}</CardTitle>
+                            </CardBody>
+                        </Card>
+                    </a>
+
+                    <a style={{color:"#333"}} href="/detail5">
+                        <Card>
+                            <CardImg top width="100%" src={card2} />
+                            <CardBody>
+                                <CardTitle>{tlist.trip5.title}</CardTitle>
+                            </CardBody>
+                        </Card>
+                    </a>
+
+                    <a style={{color:"#333"}} href="/detail6">
+                        <Card>
+                            <CardImg top width="100%" src={card2} />
+                            <CardBody>
+                                <CardTitle>{tlist.trip6.title}</CardTitle>
+                            </CardBody>
+                        </Card>
+                    </a>
                 </CardColumns>
             </div>
         );
