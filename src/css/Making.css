@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400');
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 ul, li{
     text-decoration: none;
 }

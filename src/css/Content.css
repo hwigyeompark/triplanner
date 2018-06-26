@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
+
+#content{
+    margin-top: 2.5%;
+}
+#content h1{
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 1.5%;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+.card-columns {
+    width: 55%;
+    margin: 0 auto;
+}
