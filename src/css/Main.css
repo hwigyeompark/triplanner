@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Kalam');
 
 body{
     margin: 0;
@@ -35,7 +35,7 @@ a{
 }
 
 #intro-ment h1{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Kalam', cursive;
     text-align: center;
     font-size: 5.5em;
     padding-top: 15%;

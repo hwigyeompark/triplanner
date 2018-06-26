@@ -7,28 +7,31 @@ import card3 from '../img/trip3.jpg';
 
 class Content extends Component{
     render(){
+        const tlist = {
+          trip1 : {
+              title : '"여자 혼자 떠난 파리 여행"s'
+          },
+            trip2:{
+              title:'"나홀로 미국 자유여행"'
+            },
+            trip3:{
+              title: '"친구랑 둘이서 일본 먹방"'
+            }
+        };
         return (
             <div id="content">
-                <h1>베스트 여행기</h1>
+                <h1>BEST TRIP</h1>
                 <CardColumns>
                     <Card>
                         <CardImg src={card1} />
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
-                            <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                            <Button>Button</Button>
+                            <CardTitle>{tlist.trip1.title}</CardTitle>
                         </CardBody>
                     </Card>
                     <Card>
                         <CardImg src={card3} />
-                    </Card>
-                    <Card>
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
-                            <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-                            <Button>Button</Button>
+                            <CardTitle>{tlist.trip2.title}</CardTitle>
                         </CardBody>
                     </Card>
                     <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
@@ -39,10 +42,7 @@ class Content extends Component{
                     <Card>
                         <CardImg top width="100%" src={card2} />
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
-                            <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                            <Button>Button</Button>
+                            <CardTitle>{tlist.trip3.title}</CardTitle>
                         </CardBody>
                     </Card>
                     <Card body inverse color="primary">
