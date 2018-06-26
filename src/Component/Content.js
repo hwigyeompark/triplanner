@@ -9,7 +9,7 @@ class Content extends Component{
     render(){
         const tlist = {
           trip1 : {
-              title : '"여자 혼자 떠난 파리 여행"s'
+              title : '"여자 혼자 떠난 파리 여행"'
           },
             trip2:{
               title:'"나홀로 미국 자유여행"'
@@ -22,29 +22,39 @@ class Content extends Component{
             <div id="content">
                 <h1>BEST TRIP</h1>
                 <CardColumns>
+                    <a style={{color:"#333"}} href="/detail1">
                     <Card>
                         <CardImg src={card1} />
                         <CardBody>
                             <CardTitle>{tlist.trip1.title}</CardTitle>
                         </CardBody>
                     </Card>
+                    </a>
+
+                    <a style={{color:"#333"}} href="/detail2">
                     <Card>
                         <CardImg src={card3} />
                         <CardBody>
                             <CardTitle>{tlist.trip2.title}</CardTitle>
                         </CardBody>
                     </Card>
+                    </a>
+
                     <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
                         <CardTitle>Special Title Treatment</CardTitle>
                         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
                         <Button>Button</Button>
                     </Card>
+
+                    <a style={{color:"#333"}} href="/detail3">
                     <Card>
                         <CardImg top width="100%" src={card2} />
                         <CardBody>
                             <CardTitle>{tlist.trip3.title}</CardTitle>
                         </CardBody>
                     </Card>
+                    </a>
+
                     <Card body inverse color="primary">
                         <CardTitle>Special Title Treatment</CardTitle>
                         <CardText>With supporting text below as a natural lead-in to additional content.</CardText>

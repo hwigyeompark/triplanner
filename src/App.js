@@ -5,6 +5,10 @@ import Making from './routes/Making';
 import Writing from './routes/Writing';
 import Main from "./Component/Main";
 import Navbar from "./Component/Navbar";
+import Detail1 from "./Component/detail/Detail1";
+import Detail2 from "./Component/detail/Detail2";
+import Detail3 from "./Component/detail/Detail3";
+import Footer from "./Component/Footer";
 
 class App extends Component {
   render(){
@@ -16,8 +20,12 @@ class App extends Component {
                       <Route exact path='/' component={Main}/>
                       <Route path='/making' component={Making}/>
                       <Route path='/writing' component={Writing}/>
+                      <Route path='/detail1' component={Detail1}/>
+                      <Route path='/detail2' component={Detail2}/>
+                      <Route path='/detail3' component={Detail3}/>
                   </div>
               </BrowserRouter>
+              <Footer/>
           </div>
       );
   }
