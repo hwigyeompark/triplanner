@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
-import logo from '../img/logo.png'
+import logo from '../assets/images/logo.png'
 
 const HeaderWrapper = styled.div`
     display : flex;
@@ -25,7 +25,6 @@ const LogoWrapper = styled.div`
 const LogoItem = styled.h1`
     width: 100%;
     text-align: center;
-    line-height: 43px;
 `;
 const LogoImg = styled.img`
     width: 150px;
@@ -44,8 +43,8 @@ const CustomLi = styled.li`
     float : left;
     font-size : 1.2em;
     text-align : center;
-    line-height: 55px;
     color : #777777;
+    list-style: none;
 `;
 const MenuItem = styled(CustomLi)`
     

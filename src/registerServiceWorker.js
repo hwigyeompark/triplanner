@@ -69,8 +69,8 @@ function registerValidSW(swUrl) {
             } else {
               // At this point, everything has been precached.
               // It's the perfect time to display a
-              // "Content is cached for offline use." message.
-              console.log('Content is cached for offline use.');
+              // "ContentComponent is cached for offline use." message.
+              console.log('ContentComponent is cached for offline use.');
             }
           }
         };
@@ -103,7 +103,7 @@ function checkValidServiceWorker(swUrl) {
     })
     .catch(() => {
       console.log(
-        'No internet connection found. App is running in offline mode.'
+        'No internet connection found. EntryComponent is running in offline mode.'
       );
     });
 }

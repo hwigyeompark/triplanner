@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import { Card, Button, CardImg, CardTitle, CardText, CardColumns, CardSubtitle, CardBody } from 'reactstrap';
-import "../css/Content.css";
-import card1 from '../img/trip1.jpg';
-import card2 from '../img/trip2.jpg';
-import card3 from '../img/trip3.jpg';
+import "../../assets/css/Content.css";
+import card1 from '../../assets/images/trip1.jpg';
+import card2 from '../../assets/images/trip2.jpg';
+import card3 from '../../assets/images/trip3.jpg';
 
-class Content extends Component{
+/*styled-component로 변경 및 코드 수정*/
+export default class Content extends Component{
     render(){
         const tlist = {
           trip1 : {
@@ -89,4 +90,3 @@ class Content extends Component{
         );
     };
 }
-export default Content;
