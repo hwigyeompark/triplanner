@@ -30,11 +30,11 @@ a{
 
 #container #search{
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 45%;
     height: 85px;
     margin: 0 auto;
-    border: 12px solid #cd2717;;
+    border: 5px solid #cd2717;;
 }
 
 #container #search > #searchBtn{
@@ -73,4 +73,3 @@ a{
     text-align: center;
     border: none;
 }
-/*    background: #cd2717;*/

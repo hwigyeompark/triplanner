@@ -2,21 +2,26 @@
   "name": "triplanner",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hwigyeompark.github.io/Triplanner",
   "dependencies": {
-    "bootstrap": "^4.1.1",
     "google-distance-matrix": "^1.1.1",
     "google-map-react": "^1.0.3",
-    "jquery": "^3.3.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-redux": "^6.0.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "reactstrap": "^6.1.0"
+    "reactstrap": "^6.1.0",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

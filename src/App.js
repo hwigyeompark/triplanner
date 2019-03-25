@@ -3,21 +3,22 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Making from './routes/Making';
 import Writing from './routes/Writing';
-import Main from "./Component/Main";
-import Navbar from "./Component/Navbar";
-import Detail1 from "./Component/detail/Detail1";
-import Detail2 from "./Component/detail/Detail2";
-import Detail3 from "./Component/detail/Detail3";
-import Footer from "./Component/Footer";
-import Detail4 from "./Component/detail/Detail4";
-import Detail5 from "./Component/detail/Detial5";
-import Detail6 from "./Component/detail/Detial6";
+import Main from "./components/Main";
+import Detail1 from "./components/detail/Detail1";
+import Detail2 from "./components/detail/Detail2";
+import Detail3 from "./components/detail/Detail3";
+import Footer from "./components/Footer";
+import Detail4 from "./components/detail/Detail4";
+import Detail5 from "./components/detail/Detial5";
+import Detail6 from "./components/detail/Detial6";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar"
 
 class App extends Component {
   render(){
       return (
           <div>
-              <Navbar/>
+              <Header />
               <BrowserRouter>
                   <div>
                       <Route exact path='/' component={Main}/>

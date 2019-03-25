@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 
-class Writing extends Component{
+class Detail3 extends Component{
     render(){
         return(
-          <div>
-
-          </div>
+            <div>
+            </div>
         );
     }
 }
-export default Writing;
+export default Detail3;
