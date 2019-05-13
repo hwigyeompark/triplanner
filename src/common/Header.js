@@ -14,21 +14,20 @@ const HeaderWrapper = styled.div`
 `;
 const HeaderItem = styled.div`
     display: flex;
+    justify-content: center;
     width: 60%;
     margin: 0 auto;
 `;
 const LogoWrapper = styled.div`
     display : flex;
+    align-items: center;
+    justify-content: center;
     width : 20%;
     height : 100%;
 `;
-const LogoItem = styled.h1`
-    width: 100%;
-    text-align: center;
-`;
 const LogoImg = styled.img`
-    width: 150px;
-    height: auto;
+    max-width: 150px;
+    height: 30px;
     src: url(${props => props.src})
 `;
 const MenuWrapper = styled.ul`
@@ -39,27 +38,24 @@ const MenuWrapper = styled.ul`
 `;
 const CustomLi = styled.li`
     width : 60%;
-    height : 100%;
-    float : left;
     font-size : 1.2em;
     text-align : center;
     color : #777777;
     list-style: none;
-`;
-const MenuItem = styled(CustomLi)`
-    
+    line-height: 30px;
+    text-decoration: none;
 `;
 export default class Header extends Component {
     render() {
         return (
             <HeaderWrapper>
                 <HeaderItem>
-                    <LogoWrapper>
-                        <LogoItem><LogoImg src={logo}/></LogoItem>
+                    <LogoWrapper as="a" href="/">
+                        <LogoImg src={logo}/>
                     </LogoWrapper>
                     <MenuWrapper>
-                        <CustomLi>일정만들기</CustomLi>
-                        <CustomLi>여행기작성</CustomLi>
+                        <CustomLi as="a" href="/making">일정만들기</CustomLi>
+                        <CustomLi as="a" href="/writing">여행기작성</CustomLi>
                     </MenuWrapper>
                 </HeaderItem>
             </HeaderWrapper>

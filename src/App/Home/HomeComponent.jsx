@@ -18,7 +18,6 @@ export default class HomeComponent extends Component{
                 <React.Fragment>
                     <BannerComponent/>
                 </React.Fragment>
-                <Footer/>
             </HomeWrapper>
         );
     }

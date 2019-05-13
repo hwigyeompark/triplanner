@@ -12,7 +12,6 @@ export default class EntryComponent extends Component {
               <HomeComponent/>
               <BrowserRouter>
                   <div>
-                      <Route exact path='/' component={HomeComponent}/>
                       <Route path='/making' component={Making}/>
                       <Route path='/writing' component={Writing}/>
                   </div>
