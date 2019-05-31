@@ -1,15 +1,7 @@
 import React, {Component} from 'react';
 import backgroundBanner from '../../assets/images/back.png'
-import styled, {createGlobalStyle} from 'styled-components'
+import styled from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
-  html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-`;
 const BannerWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -56,7 +48,6 @@ export default class BannerComponent extends Component {
     render() {
         return (
             <React.Fragment>
-                <GlobalStyle/>
                 <BannerWrapper>
                     <BannerBox>
                         <IntroBox>

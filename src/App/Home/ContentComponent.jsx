@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardColumns, CardSubtitle, CardBody } from 'reactstrap';
 import "../../assets/css/Content.css";
 import card1 from '../../assets/images/trip1.jpg';
 import card2 from '../../assets/images/trip2.jpg';
@@ -31,61 +30,6 @@ export default class Content extends Component{
         return (
             <div id="content">
                 <h1>BEST TRIP</h1>
-                <CardColumns>
-                    <a style={{color:"#333"}} href="/detail1">
-                    <Card>
-                        <CardImg src={card1} />
-                        <CardBody>
-                            <CardTitle>{tlist.trip1.title}</CardTitle>
-                        </CardBody>
-                    </Card>
-                    </a>
-
-                    <a style={{color:"#333"}} href="/detail2">
-                    <Card>
-                        <CardImg src={card3} />
-                        <CardBody>
-                            <CardTitle>{tlist.trip2.title}</CardTitle>
-                        </CardBody>
-                    </Card>
-                    </a>
-
-                    <a style={{color:"#333"}} href="/detail3">
-                    <Card>
-                        <CardImg top width="100%" src={card2} />
-                        <CardBody>
-                            <CardTitle>{tlist.trip3.title}</CardTitle>
-                        </CardBody>
-                    </Card>
-                    </a>
-
-                    <a style={{color:"#333"}} href="/detail4">
-                        <Card>
-                            <CardImg top width="100%" src={card2} />
-                            <CardBody>
-                                <CardTitle>{tlist.trip4.title}</CardTitle>
-                            </CardBody>
-                        </Card>
-                    </a>
-
-                    <a style={{color:"#333"}} href="/detail5">
-                        <Card>
-                            <CardImg top width="100%" src={card2} />
-                            <CardBody>
-                                <CardTitle>{tlist.trip5.title}</CardTitle>
-                            </CardBody>
-                        </Card>
-                    </a>
-
-                    <a style={{color:"#333"}} href="/detail6">
-                        <Card>
-                            <CardImg top width="100%" src={card2} />
-                            <CardBody>
-                                <CardTitle>{tlist.trip6.title}</CardTitle>
-                            </CardBody>
-                        </Card>
-                    </a>
-                </CardColumns>
             </div>
         );
     };

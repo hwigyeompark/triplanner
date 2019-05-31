@@ -1,7 +1,20 @@
 import React, {Component} from 'react'
-import styled from 'styled-components'
+import styled, {createGlobalStyle} from 'styled-components'
 import logo from '../assets/images/logo.png'
+import {Link} from 'react-router-dom'
 
+const GlobalStyle = createGlobalStyle`
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+    color: #555555;
+  }
+`;
 const HeaderWrapper = styled.div`
     display : flex;
     width : 100%;
@@ -43,22 +56,26 @@ const CustomLi = styled.li`
     color : #777777;
     list-style: none;
     line-height: 30px;
-    text-decoration: none;
 `;
 export default class Header extends Component {
     render() {
         return (
-            <HeaderWrapper>
-                <HeaderItem>
-                    <LogoWrapper as="a" href="/">
-                        <LogoImg src={logo}/>
-                    </LogoWrapper>
-                    <MenuWrapper>
-                        <CustomLi as="a" href="/making">일정만들기</CustomLi>
-                        <CustomLi as="a" href="/writing">여행기작성</CustomLi>
-                    </MenuWrapper>
-                </HeaderItem>
-            </HeaderWrapper>
+            <React.Fragment>
+                <GlobalStyle/>
+                <HeaderWrapper>
+                    <HeaderItem>
+                        <LogoWrapper>
+                            <Link to="/">
+                                <LogoImg src={logo}/>
+                            </Link>
+                        </LogoWrapper>
+                        <MenuWrapper>
+                            <CustomLi><Link to="/making">일정만들기</Link></CustomLi>
+                            <CustomLi><Link to="/writing">여행기작성</Link></CustomLi>
+                        </MenuWrapper>
+                    </HeaderItem>
+                </HeaderWrapper>
+            </React.Fragment>
         )
     }
 }
